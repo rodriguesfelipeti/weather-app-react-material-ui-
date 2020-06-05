@@ -41,7 +41,6 @@ const  App = () => {
     if(param.length >= 3) {
       
       const APIkey = "22077a9606dc4caf6305b618c12e07cf"
-      console.log(`https://api.openweathermap.org/data/2.5/weather?q=+${param}&units=metric&APPID=${APIkey}`)
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=+${param}&units=metric&APPID=${APIkey}`)
       .then(res => res.json())
       .then(res => {
